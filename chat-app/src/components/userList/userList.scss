@@ -1,0 +1,35 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+
+.userListSection{
+    height: 100%;
+    width: 262px;
+    background-color: $main-white-color;
+
+    .userCategories{
+        width: 100%;
+        height: 42px;
+        .categoryBtn{
+            color: $categoryText-gray-color;
+            font-family: 'OpenSansRegular';
+            font-size: 14px;
+            border: none;
+            width: 50%;
+            height: 100%;
+            cursor: pointer;
+        }
+        .active{
+            background-color: $main-white-color;
+        }
+        .inactive{
+            background-color: $inactiveCategory-lightgray-color;
+            border: solid 1px $inactiveCategoryBorder-lightgray-color;
+        }
+
+    }
+    .userList{
+        height: 532px;
+        overflow: auto;
+    }
+}

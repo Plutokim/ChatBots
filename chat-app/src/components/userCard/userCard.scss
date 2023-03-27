@@ -1,0 +1,24 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+.userCard{
+    background-color: $scrollTrack-lightcyan-color;
+    display: flex;
+    align-items: center;
+    .avatar{
+        height: 172px;
+    }
+    .info{
+        margin: 0 auto;
+        color: $username-black-color;
+        width: 646px;
+        .username{
+            font-size: 24px;
+            font-family: "OpenSansSemiBold";
+        }
+        .bio{
+            font-size: 16px;
+            font-family: "OpenSansRegular";
+        }
+    }
+}

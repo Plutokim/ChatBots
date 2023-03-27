@@ -1,0 +1,51 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+.user{
+    padding-top: 13px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap:4px;
+    align-items: center;
+    cursor: pointer;
+    background-color: $main-white-color;
+    .avatar{
+        width: 63px;
+        height: 63px;
+        position: relative;
+
+        .avatarImage{
+            border-radius: 4px;
+            width: 60px;
+            position: absolute;
+        }
+        .avatarStatus{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    .info{
+        width: 164px;
+        font-size: 16px;
+        .username{
+            font-family: "OpenSansBold";
+            color: $username-black-color;
+            
+        }
+        .notification{
+            font-family: 'OpenSansRegular';
+            color: $lastmsg-gray-color;
+        }
+        .new{
+            font-family: "OpenSansBold";
+            color: $newMsg-red-color;
+        }
+    }
+
+    &:hover {
+        background-color: $userActive-lightgray-color;
+    }
+}

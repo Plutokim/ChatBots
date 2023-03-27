@@ -1,0 +1,42 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+
+.messagesForm{
+    padding-bottom: 19px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    justify-content: center;
+    .msgInput{
+        display: block;
+        color: $input-gray-color;
+        border: 1px solid $inputBorder-gray-color;
+        border-radius: 3px;
+        width: 616px;
+        height: 34px;
+        font-size: 14px;
+        padding-left: 13px;
+        &:focus{
+            border: 1px solid $inputActiveOutline-blue-color;
+            box-shadow: 0 0 10px $inputActiveOutline-blue-color;
+        }
+    }
+    .msgButton{
+        color: $main-white-color;
+        font-size: 13px;
+        font-family:"OpenSansRegular";
+        background-color: $button-blue-color;
+        border: 1px solid $buttonBorder-blue-color;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 195px;
+        height: 38px;
+
+        &:disabled{
+            background-color: $input-gray-color ; 
+            border: 1px solid $lastmsg-gray-color;
+        }
+    }
+
+}

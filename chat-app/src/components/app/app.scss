@@ -1,0 +1,10 @@
+@import '../../style/variables';
+
+.mainChatWindow{
+    display: flex;
+    width: 1140px;
+    height: 651px;
+    margin: 20px auto;
+    background-color: $chatWindow-lightcyan-color;
+
+}

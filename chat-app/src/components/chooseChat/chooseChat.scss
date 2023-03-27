@@ -1,0 +1,12 @@
+@import '../../style/variables';
+
+.chooseChat{
+    width: 879px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    .infoText{
+        color: $reciverUsername-cyan-color;
+    }
+}

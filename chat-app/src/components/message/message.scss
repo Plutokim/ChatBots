@@ -1,0 +1,66 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+.message{
+    align-self: start;
+    position: relative;
+    width:634px;
+    border-radius: 10px;
+    background-color: $main-white-color;
+    margin-bottom: 19px;
+
+    .msgInfo{
+        border-top-right-radius: 10px ;
+        border-top-left-radius: 10px ;
+        padding: 0 17px;
+        height: 36px;
+        font-size: 14px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "OpenSansBold";
+        background-color: $scrollTrack-lightcyan-color;
+        color: $reciverUsername-cyan-color;
+        justify-self: start;
+       
+        .msgDate{
+            font-family: "OpenSansRegular";
+            color: $msgDate-gray-color;
+        }
+    }
+
+    .msgText{
+        padding: 17px;
+        font-family:"OpenSansSemiBold";
+    }
+
+    .left {
+        position: absolute;
+        width: 0; 
+        height: 0;
+        border-top: 10px solid transparent;
+        border-right: 15px solid $main-white-color;
+        border-bottom: 10px solid transparent;
+        left: -10px;
+        bottom: 7px;
+    }
+    .right {
+        position: absolute;
+        width: 0; 
+        height: 0;
+        border-top: 10px solid transparent;
+        border-left: 15px solid $main-white-color;
+        border-bottom: 10px solid transparent;
+        right: -10px;
+        bottom: 7px;
+    }
+}
+
+.sender{
+    align-self: end;
+
+    .msgInfo{
+            background-color: $msgSender-lightOrange-color;
+            color: $senderUsername-brown-color;
+    }
+}

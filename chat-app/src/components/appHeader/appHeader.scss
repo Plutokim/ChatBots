@@ -1,0 +1,17 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+.appHeader{
+    background-color: $main-white-color;
+    height: 80px;
+    width: 100%;
+    
+
+    .headerLogo{
+        font-family: 'OpenSansSemiBold';
+        padding-top: 20px;
+        font-size: 32px;
+        margin-left: 21%;
+        
+    }
+}

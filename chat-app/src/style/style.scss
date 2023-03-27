@@ -1,0 +1,41 @@
+@import './variables';
+@import './fonts.scss';
+
+body {
+    margin: 0;
+    font-family: 'OpenSansRegular';
+    background-color: $main-cyan-color;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+input{
+    outline: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+::-webkit-scrollbar-track {
+    background-color: $scrollTrack-lightcyan-color;
+    border-radius: 10px;
+ }
+ ::-webkit-scrollbar-thumb {
+    background: $scrollHabdle-gray-color;
+    border-radius: 10px;
+  }

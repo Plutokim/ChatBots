@@ -1,0 +1,12 @@
+@import '../../style/variables';
+@import '../../style/fonts';
+
+.messageWindow{
+    overflow: auto;
+    height: 387px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    padding: 0 19px;
+    display: flex;
+    flex-direction: column;
+}
